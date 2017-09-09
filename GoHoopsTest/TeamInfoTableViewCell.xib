@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamInfoTableViewCellIdentifier" id="KGk-i7-Jjw" customClass="TeamInfoTableViewCell" customModule="GoHoopsTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="674" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="674" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74y-Ah-KAW">
+                        <rect key="frame" x="58" y="11" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="fu7-it-ui1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-Zk-Yie">
+                        <rect key="frame" x="258" y="11" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="Xn1-S7-1Uk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2j-Px-7nD">
+                        <rect key="frame" x="508" y="3" width="150" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="9JY-2H-Iqz"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="v6L-Zk-Yie" secondAttribute="bottom" constant="3.5" id="FtV-zv-iwQ"/>
+                    <constraint firstItem="u2j-Px-7nD" firstAttribute="leading" secondItem="v6L-Zk-Yie" secondAttribute="trailing" constant="50" id="MBT-7f-jgq"/>
+                    <constraint firstItem="v6L-Zk-Yie" firstAttribute="leading" secondItem="74y-Ah-KAW" secondAttribute="trailing" constant="50" id="Sia-kM-viK"/>
+                    <constraint firstAttribute="bottom" secondItem="u2j-Px-7nD" secondAttribute="bottom" constant="3.5" id="bcN-4D-89k"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="74y-Ah-KAW" secondAttribute="bottom" constant="3.5" id="bhb-8f-nZM"/>
+                    <constraint firstItem="74y-Ah-KAW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="50" id="coB-5q-ExI"/>
+                    <constraint firstItem="v6L-Zk-Yie" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="mQk-lF-Qt5"/>
+                    <constraint firstItem="u2j-Px-7nD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="qiI-7z-QFd"/>
+                    <constraint firstItem="74y-Ah-KAW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="xvA-gk-Bhr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="jerseyNoLbl" destination="74y-Ah-KAW" id="0bf-SO-Gto"/>
+                <outlet property="jerseyNoTf" destination="u2j-Px-7nD" id="ECu-g2-ze7"/>
+                <outlet property="playerNameLbl" destination="v6L-Zk-Yie" id="PxG-qp-bER"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="59"/>
+        </tableViewCell>
+    </objects>
+</document>
